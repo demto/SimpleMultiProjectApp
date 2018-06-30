@@ -1,4 +1,4 @@
-﻿using SharedProject.Dtos;
+﻿using Shared;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
@@ -14,11 +14,17 @@ namespace DataAccess.EntityConfigurations
         {
             // Table changes
 
+            ToTable("PersonDtos");
+
             // Key changes
 
-            HasKey(k => k.Id);
+            HasKey(k => k.PersonId);
 
             // Property changes
+
+            Property(p => p.PersonId)
+            .HasColumnName("PersonId")
+            .HasColumnOrder(0);
 
             Property(p => p.Name)
             .IsRequired()

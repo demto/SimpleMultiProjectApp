@@ -1,5 +1,5 @@
 ﻿using DataAccess;
-using SharedProject.Dtos;
+using Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +16,7 @@ namespace BusinessLogic.ServiceLogic
                 {
                     Name = name,
                     NickName = nickName,
-                    TelNumber = tel,
+                    TelephoneNumber = tel,
                 };
                 context.Persons.Add(newPerson);
                 context.SaveChanges();

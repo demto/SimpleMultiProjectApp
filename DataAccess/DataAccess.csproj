@@ -55,6 +55,18 @@
     <Compile Include="Migrations\201806272105469_InitialMigration.Designer.cs">
       <DependentUpon>201806272105469_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806301914564_PersonDtoSwap.cs" />
+    <Compile Include="Migrations\201806301914564_PersonDtoSwap.Designer.cs">
+      <DependentUpon>201806301914564_PersonDtoSwap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806301924014_SlightChangesOnTableCharacteristicsOfNewPersonDto.cs" />
+    <Compile Include="Migrations\201806301924014_SlightChangesOnTableCharacteristicsOfNewPersonDto.Designer.cs">
+      <DependentUpon>201806301924014_SlightChangesOnTableCharacteristicsOfNewPersonDto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806301928395_ChangingColumnOrder.cs" />
+    <Compile Include="Migrations\201806301928395_ChangingColumnOrder.Designer.cs">
+      <DependentUpon>201806301928395_ChangingColumnOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,7 +80,21 @@
     <EmbeddedResource Include="Migrations\201806272105469_InitialMigration.resx">
       <DependentUpon>201806272105469_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806301914564_PersonDtoSwap.resx">
+      <DependentUpon>201806301914564_PersonDtoSwap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806301924014_SlightChangesOnTableCharacteristicsOfNewPersonDto.resx">
+      <DependentUpon>201806301924014_SlightChangesOnTableCharacteristicsOfNewPersonDto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806301928395_ChangingColumnOrder.resx">
+      <DependentUpon>201806301928395_ChangingColumnOrder.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
-  <Import Project="..\SharedProject\SharedProject.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{3d078e2e-dc95-4d0b-b0e6-f77ed44d1b8e}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

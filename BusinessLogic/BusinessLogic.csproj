@@ -63,7 +63,10 @@
       <Project>{644716b1-126a-4024-9fec-106e70196603}</Project>
       <Name>DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{3d078e2e-dc95-4d0b-b0e6-f77ed44d1b8e}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
   </ItemGroup>
-  <Import Project="..\SharedProject\SharedProject.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
